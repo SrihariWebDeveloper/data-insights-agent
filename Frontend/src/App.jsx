@@ -5,7 +5,7 @@ import 'aos/dist/aos.css'
 import Landing from './pages/Landing.jsx'
 import Dashboard from './pages/Dashboard.jsx'
 import Navbar from './components/Navbar.jsx'
-import Footer from './components/footer.jsx'
+import Footer from './components/Footer.jsx'
 
 const App = () => {
   useEffect(() => {
