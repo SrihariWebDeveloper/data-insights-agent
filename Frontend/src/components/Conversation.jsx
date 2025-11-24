@@ -44,7 +44,7 @@ const Conversation = ({ fileUrl }) => {
     setTyping(true);
 
     try {
-      const res = await fetch("http://localhost:3000/api/chat", {
+      const res = await fetch("https://data-insights-agent-1.onrender.com/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ file_url: fileUrl, question }),
