@@ -17,7 +17,7 @@ cloudinary.config({
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-const AGENT_URL = process.env.AGENT_URL || 'http://localhost:8001';
+const AGENT_URL = process.env.AGENT_URL || 'https://data-insights-agent-leta.onrender.com';
 
 // Multer setup for temporary file storage
 const storage = multer.diskStorage({
