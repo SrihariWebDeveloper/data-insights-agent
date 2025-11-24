@@ -8,7 +8,8 @@ from controllers.dataset import dataset_bp
 from controllers.agent import agent_bp
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/api/*": {"origins": "https://data-insights-agent-1.onrender.com"}})
+
 
 # MongoDB client (shared)
 mongo_client = pymongo.MongoClient(MONGO_URI)
