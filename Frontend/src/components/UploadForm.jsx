@@ -27,7 +27,7 @@ const UploadForm = ({ onFileUploaded }) => {
       // We'll use XMLHttpRequest here to get progress and robust error messages.
       await new Promise((resolve, reject) => {
         const xhr = new XMLHttpRequest();
-        xhr.open("POST", "http://localhost:3000/api/upload");
+        xhr.open("POST", "https://data-insights-agent-1.onrender.com/api/upload");
 
         xhr.onload = () => {
           try {

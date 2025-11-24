@@ -15,7 +15,7 @@ export default function Dashboard() {
     setFileUrl(uploadedFileUrl);
     setLoading(true);
     try {
-      const res = await fetch("http://localhost:3000/api/analyze", {
+      const res = await fetch("https://data-insights-agent-1.onrender.com/api/analyze", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ datasetUrl: uploadedFileUrl }),
